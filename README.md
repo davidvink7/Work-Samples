@@ -10,7 +10,7 @@ This file shows a transaction applied in MySQL using the async utility module wi
 
 [batch_insert_and_update.js](https://github.com/davidvink-test/work-samples/blob/master/batch_insert_and_update.js)
 
-Instead of updating every field one by one, a more fast manner is to update in batches. To do this for 1000s of instances in a second as opposed to several minutes LOAD DATA LOCAL INFILE works most efficient.
+Instead of updating every field one by one, a faster way is to update in batches. To do this for 1000s of instances in a second as opposed to several minutes LOAD DATA LOCAL INFILE works most efficient.
 
 [bias_eraser.rb](https://github.com/davidvink-test/Work-Samples/blob/master/location_bias_eraser.rb)
 
