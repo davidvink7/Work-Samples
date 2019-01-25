@@ -1,8 +1,8 @@
 ### Code Samples
 
-[dynamic_maps.js.coffee](https://github.com/davidvink7/work-samples/blob/master/dynamic_maps.js.coffee)
+[high_risk_unit.js](https://github.com/davidvink7/work-samples/blob/master/high_risk_unit.js)
 
-Dynamic Maps from Google which import geolocations including polylines. While hovering over a location an infoWindow pops open with information.
+High Risk Unit route which calls findUnit function in high_risk.js model and assigns values to API object. Backfiller unit_backfiller.js has been included as well.
 
 [async_model_transactions.js](https://github.com/davidvink7/work-samples/blob/master/async_model_transactions.js)
 
