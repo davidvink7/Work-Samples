@@ -10,14 +10,14 @@ exports.request = (req,res,next) => {
    let address = _.at(req.data, 'transaction.shipTo.addressNormalShort')[0];
    let unit = _.at(req.data, 'transaction.shipTo.unit')[0];
 
-   high_risk.findUnit(address,unit,(number) => {
-      if(unit.length == 0) return next();
-      let diff = moment() - moment(_.at(number[0], 'updated_at')[0]);
+   high_risk.findUnit(address,unit,(high_risk_unit) => {
+      if(high_risk_unit.length == 0) return next();
+      let diff = moment() - moment(_.at(high_risk_unit[0], 'updated_at')[0]);
       let days = Math.floor(moment.duration(diff).asDays()) || 1;
 
       req.data['nofraud_high_risk_unit'] = {
          address: address,
-         number: number,
+         unit: high_risk_unit,
          last_seen: days
       };
       return next();
